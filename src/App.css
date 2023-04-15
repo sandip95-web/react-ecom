@@ -1,0 +1,68 @@
+#header{
+    background-color: black;
+}
+.icon{
+    color:red;
+    font-size: 3rem;
+}
+a {
+    font-size:14px;
+    font-weight:700
+  }
+  .superNav {
+    font-size:13px;
+  }
+  .form-control {
+    outline:none !important;
+    box-shadow: none !important;
+  }
+  .dzoom:hover{
+    transform: scale(1.1);
+    transition: 0.8s ease;
+  }
+  .stitle{
+    margin-top: 10rem;
+  }
+  .img{
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .pimg{
+    width: 50%;
+  }
+  .amount{
+    justify-content: space-evenly;
+  }
+
+
+.dart{
+
+  height: auto;
+}
+.dlink{
+  margin-bottom: 1rem;
+}
+
+.cimage{
+  width: 50%;
+  height: 50vh;
+}
+.cimg{
+  width: 20%;
+  height: 15vh;
+}
+.cart-fbutton{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.no-cart{
+  margin-top: 20rem;
+  text-align: center;
+}
+.remove{
+  font-size: 2rem;
+}
