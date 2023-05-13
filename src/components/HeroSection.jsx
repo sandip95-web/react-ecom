@@ -10,7 +10,7 @@ const HeroSection = ({myData}) => {
       <h3>Welcome to <strong>{name}</strong></h3>
       <h1>It is more than just sales.</h1>
       <h2>An E-commerce platform that is made to impress</h2>
-      <NavLink to="/product" className="btn-get-started scrollto">Shop Now</NavLink>
+      <NavLink to="/clothes" className="btn-get-started scrollto">Shop Now</NavLink>
     </div>
   </section>
     

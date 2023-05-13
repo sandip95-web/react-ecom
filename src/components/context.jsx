@@ -24,8 +24,8 @@ const initialState={
     singleLoading:false,
     singleProduct:[],
     singleClothesProduct:[],
-    Image:[],
-    cart:getLocalCart()
+    cart:getLocalCart(),
+    total:""
 }
 const AppProvider=({children})=>{
 
@@ -158,6 +158,9 @@ const clearCart=()=>{
 //add to localstorage
 
 useEffect(()=>{
+    dispatch({
+        type:'TOTAL_PRICE'
+    })
     localStorage.setItem('localCart',JSON.stringify(state.cart))
 },[state.cart])
 

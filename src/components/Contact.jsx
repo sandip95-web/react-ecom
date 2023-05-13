@@ -1,6 +1,8 @@
+import { useAuth0 } from '@auth0/auth0-react'
 import React from 'react'
 
 const Contact = () => {
+  const{isAuthenticated,user}=useAuth0()
   return (
     <>
       <section id="contact" className="contact">
@@ -47,10 +49,10 @@ const Contact = () => {
             <form action="https://formspree.io/f/mnqygwgk" method="post" role="form" className="php-email-form">
               <div className="row">
                 <div className="col-md-6 form-group">
-                  <input type="text" name="name" className="form-control" id="name" placeholder="Your Name" required />
+                  <input type="text" name="name" value={isAuthenticated && user.name} className="form-control" id="name" placeholder="Your Name" required />
                 </div>
                 <div className="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" className="form-control" name="email" id="email" placeholder="Your Email" required />
+                  <input type="email" value={isAuthenticated && user.email} className="form-control" name="email" id="email" placeholder="Your Email" required />
                 </div>
               </div>
               <div className="form-group mt-3">

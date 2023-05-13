@@ -148,6 +148,17 @@ const reducer=(state,action)=>{
                 ...state,
                 cart:updateItem
             }
+        case 'TOTAL_PRICE':
+            let totalAmount=state.cart.reduce((initial,item)=>{
+                 let {price,amount}=item
+                 
+                 initial=initial+((price*139)*amount)
+                 return initial
+            },0);
+            return{
+                ...state,
+                total:totalAmount
+            }
     }
 }
 
